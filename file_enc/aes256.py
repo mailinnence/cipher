@@ -91,7 +91,7 @@ root = tk.Tk()
 root.title("File Explorer & Encryption/Decryption")  # 창의 제목 설정
 
 # 창의 크기를 지정합니다.
-root.geometry("400x400")  # 가로 400픽셀, 세로 400픽셀 크기로 조절
+root.geometry("350x250")  # 가로 400픽셀, 세로 400픽셀 크기로 조절
 
 # 파일 탐색기 열기 버튼 생성
 file_explorer_button = tk.Button(root, text="파일 탐색기 열기", command=open_file_explorer)
