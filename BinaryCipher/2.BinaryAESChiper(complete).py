@@ -1,6 +1,6 @@
 # 메모리를 너무 많이 잡아 먹기 때문에
 # 용량이 어느 정도 있는 파일은 다른 방법을 사용해야 한다.
-# pip install pycryptodomex
+# pip install pycryptodome
 
 
 from Crypto.Cipher import AES
