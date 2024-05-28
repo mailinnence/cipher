@@ -1,10 +1,7 @@
 
 
 
-
-
-
-
+import os
 import tkinter as tk
 from tkinter import filedialog, messagebox
 from Crypto.Cipher import AES
@@ -72,6 +69,25 @@ def decrypt_file():
         current_file_label.config(text="복호화가 완료되었습니다.")
     except Exception as e:
         current_file_label.config(text="복호화가 완료되었습니다." + str(e))
+
+
+
+
+# 라이브러리 자동 설치
+try:
+    import Crypto
+except ImportError:
+    try:
+        os.system("pip install pycryptodome")
+    except Exception as e:
+        pass
+else:
+    pass
+
+
+
+
+
 
 
 # Tkinter 애플리케이션을 생성합니다.
